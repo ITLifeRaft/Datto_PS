@@ -10,7 +10,7 @@
   Phase-1: NO remediation actions.
 
 .VERSION
-  1.3.0 (2026-02-19)
+  1.0.8 (2026-02-19)
   - Restores: Levels/MaxEventsPerLog, artifacts, cleanup, SCM 7031 SafeKnown logic, wrapper-only markers.
   - Adds: Custom Noise Tuning block (provider+ID / provider-only / message regex / time-boxed),
           Unknowns appended to EventLog_Observer_.txt, UdfMode = Status or Summary.
@@ -570,3 +570,4 @@ else {
     exit 0   # Healthy
 }
 # === DATTO WRAPPER END ===
+
