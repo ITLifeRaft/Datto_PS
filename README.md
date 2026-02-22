@@ -15,6 +15,22 @@ Returns structured JSON and exit codes for Datto component monitoring
 
 The goal is to reduce alert noise, surface actionable signals, and provide a consistent, auditable view of Windows log health without changing system state.
 
+## How To Use the Script.  
+Check if UDF23 is being used.
+Under setup | Global Settings, Checked UDF23 and give it the description "WINDOWS LOGS STATUS"
+## Create New Component
+Inside Datto RMM
+Go to | Automation | Components
+Create component
+Enter a Name, Description, Category "scripts"
+Paste the PS script from the downloaded ZIP.
+Add Include Selected Sites.
+
+## Testing
+Run the PS against a test machine.
+Change the view under the Devices | All to include the UDF23
+Remote on to machine, Navigate to C:\Tools\Datto_logs to review the output files.
+Copy and paste the results of the EventLog_Observer_.txt into an AI model to detemine the nature of the unkown issues.
 
 ## What the Script Does
 
